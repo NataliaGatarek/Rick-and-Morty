@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react'
+import Charakters from "./Charakters.js";
+import "./Charakters.css"
 
 function Home() {
     const [characters, setCharacters] = useState([]);
@@ -11,15 +13,11 @@ function Home() {
   useEffect(() => {
     fetchApi();
   });
- const myStyledDiv = {
-    backgroundColor: "darkgray",
-  };
-    return <div style={myStyledDiv}>
-            <h1>Hi</h1>
+  return <div className="container">
             {characters.length !== 0 ? (
-            characters.map((character) => {
-              return <p>{character.name}<br></br>{character.species}<br></br>{character.status}<br></br>{character.gender}<br></br><img src={character.image}/>
-              </p>;
+        characters.map((character) =>
+        {
+          return <Charakters key={character.id} character = {character} />
         })
       ) : (
         <p>loading..</p>

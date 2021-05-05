@@ -23,7 +23,6 @@ function Home() {
         <p>loading..</p>
       )}
         </div>
-    
 }
 export default Home;
 

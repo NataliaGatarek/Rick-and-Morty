@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./Charakters.css"
 
 function Charakters(props) {
 

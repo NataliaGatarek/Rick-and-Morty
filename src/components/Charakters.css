@@ -3,18 +3,14 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  background-color: blanchedalmond;
+  margin-top: 25px;
 }
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 2px solid lightcoral;
+  border: 1px solid lightcoral;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin-bottom: 7px;
 }
@@ -67,7 +63,7 @@ img {
   align-items: center;
   justify-content: space-around;
 }
-.modal {
+/*.modal {
   background: lightcoral;
   position: absolute;
   float: left;
@@ -84,10 +80,16 @@ img {
   margin: 5px;
   font-size: 25px;
   text-align: center;
-}
+}*/
 .display {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+.displaying {
+  background-color: lightcoral;
+}
+.disp {
+  background-color: blanchedalmond;
 }

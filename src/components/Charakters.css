@@ -70,3 +70,31 @@ img {
   align-items: center;
   justify-content: space-around;
 }
+.modal {
+  background: lightcoral;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid blanchedalmond;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.modal-title {
+  margin: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}

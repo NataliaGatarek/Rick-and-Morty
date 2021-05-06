@@ -26,7 +26,7 @@ function Home() {
     <div className="container">
     {!loading ? (
     characters.filter((character) =>
-    character.name
+      character.name
     .toLowerCase()
     .includes(searchBaner.toLowerCase())
     )

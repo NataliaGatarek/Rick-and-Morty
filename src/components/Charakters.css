@@ -48,7 +48,6 @@
 .flip-card-front {
   background-color: #bbb;
   color: black;
-  border-radius: 5px;
 }
 
 /* Style the back side */
@@ -56,12 +55,10 @@
   background-color: lightcoral;
   color: white;
   transform: rotateY(180deg);
-  border-radius: 7px;
 }
 img {
   width: 300px;
   height: 200px;
-  border-radius: 5px 5px 0 0;
 }
 .baner {
   background-color: lightcoral;
@@ -93,8 +90,4 @@ img {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
 }

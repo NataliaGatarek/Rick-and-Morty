@@ -32,18 +32,15 @@ function Charakters(props) {
                           <Modal.Title><strong>{props.character.name}</strong></Modal.Title>
                           </Modal.Header>
                     <Modal.Body className="displaying" >
-                        <div className="display">
                         <img src={props.character.image} />
                         <strong> {props.character.species} </strong>  
                         <strong> {props.character.gender} </strong>   
                         <strong> {props.character.status} </strong>
-                        </div>
                           </Modal.Body>
                           <Modal.Footer className="disp">
                           <Button variant="outline-danger" onClick={handleClose}>Close</Button>
                         </Modal.Footer>
                         </Modal>
-                     
             </div>
             </div>
     );

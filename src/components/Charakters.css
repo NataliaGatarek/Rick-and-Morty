@@ -49,7 +49,7 @@
 /* Style the back side */
 .flip-card-back {
   background-color: lightcoral;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 img {

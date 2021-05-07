@@ -28,16 +28,16 @@ function Charakters(props) {
                           backdrop="static"
                     keyboard={false}
                 >
-                          <Modal.Header className="disp">
+                          <Modal.Header>
                           <Modal.Title><strong>{props.character.name}</strong></Modal.Title>
                           </Modal.Header>
                     <Modal.Body className="displaying" >
                         <img src={props.character.image} />
-                        <strong> {props.character.species} </strong>  
-                        <strong> {props.character.gender} </strong>   
-                        <strong> {props.character.status} </strong>
+                          <strong> {props.character.species},</strong>
+                         <strong> {props.character.gender}, </strong>   
+                         <strong> {props.character.status} </strong>
                           </Modal.Body>
-                          <Modal.Footer className="disp">
+                          <Modal.Footer>
                           <Button variant="outline-danger" onClick={handleClose}>Close</Button>
                         </Modal.Footer>
                         </Modal>

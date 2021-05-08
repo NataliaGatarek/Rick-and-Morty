@@ -3,6 +3,7 @@ import Charakters from "./Charakters.js";
 import "./Charakters.css"
 import ReactPaginate from 'react-paginate';
 import "./Pagination.css"
+import logo from "./imgg/r.png";
 
 
 function Home() {
@@ -31,8 +32,9 @@ function Home() {
 		
 	};
   return <React.Fragment>
-    <div className="baner">
-      <input type="text" placeholder="search" onChange={event => { setSearchBaner(event.target.value) }}/>
+    <div><img src={logo} alt="logo" className="logo" /></div>
+    <div className="search">
+      <input type="text" className="inp" placeholder="search" onChange={event => { setSearchBaner(event.target.value) }}/>
     </div>
     {!loading ? (
       <ReactPaginate
@@ -51,6 +53,21 @@ function Home() {
       : (
 				<div>Nothing more to display</div>
 			)} 
+    <div className="container">
+    {!loading ? (
+    characters.filter((character) =>
+      character.name
+    .toLowerCase()
+    .includes(searchBaner.toLowerCase())
+    )
+    .map((character) =>
+        {
+      return <Charakters key={character.id} character={character} />
+        })
+      ) : (
+        <p>loading..</p>
+      )}
+    </div>
   </React.Fragment>
 }
 export default Home;

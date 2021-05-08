@@ -6,10 +6,11 @@
 
 .page {
   padding: 10px;
-  border: 1px solid #dcdcdc;
+  border: 2px solid #97ce4c;
   border-radius: 6px;
   margin-right: 10px;
   cursor: pointer;
+  background-color: black;
 }
 
 .disabled {
@@ -19,7 +20,7 @@
 .active {
   border: 2px solid #000;
   font-weight: bold;
-  background-color: lightcoral;
+  background-color: #97ce4c;
 }
 
 .previous {
@@ -34,7 +35,15 @@
 }
 
 .next {
+  border-radius: 6px;
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+.inp {
+  background-color: black;
+  border-radius: 6px;
+  padding: 2px;
+  border: 2px solid #97ce4c;
+  color: #08bae3;
 }

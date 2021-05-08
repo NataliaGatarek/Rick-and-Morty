@@ -20,15 +20,16 @@ function Charakters(props) {
             </div>
             <div className="flip-card-back display">
                     <strong>{props.character.name}</strong>
-                    <Button variant="outline-danger" onClick={handleShow}>More</Button>{' '}
+                    <Button variant="outline-info" onClick={handleShow}>More</Button>{' '}
                     </div>
                      <Modal Modal
                           show={show}
                           onHide={handleClose}
                           backdrop="static"
                     keyboard={false}
+                    className="dip"
                 >
-                          <Modal.Header>
+                          <Modal.Header className="disp">
                           <Modal.Title><strong>{props.character.name}</strong></Modal.Title>
                           </Modal.Header>
                     <Modal.Body className="displaying" >
@@ -37,8 +38,8 @@ function Charakters(props) {
                          <strong> {props.character.gender}, </strong>   
                          <strong> {props.character.status} </strong>
                           </Modal.Body>
-                          <Modal.Footer>
-                          <Button variant="outline-danger" onClick={handleClose}>Close</Button>
+                          <Modal.Footer className="disp">
+                          <Button variant="outline-info" onClick={handleClose}>Close</Button>
                         </Modal.Footer>
                         </Modal>
             </div>

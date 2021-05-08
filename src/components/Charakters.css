@@ -10,8 +10,7 @@
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid lightcoral;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border: 2px solid #08bae3;
   margin-bottom: 7px;
 }
 
@@ -48,27 +47,39 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: lightcoral;
-  color: black;
+  background-color: black;
+  color: #08bae3;
   transform: rotateY(180deg);
 }
 img {
-  width: 300px;
-  height: 200px;
+  width: 297px;
+  height: 197px;
 }
-.baner {
-  background-color: lightcoral;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+
 .display {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  font-size: 30px;
 }
 .displaying {
-  background-color: lightcoral;
+  display: flex;
+  background-color: #08bae3;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.disp {
+  background-color: black;
+  color: white;
+  border: 2px solid #08bae3;
+  color: #08bae3;
+}
+.logo {
+  width: 600px;
+  height: 200px;
+}
+.search {
+  margin: 7px 7px 7px 7px;
 }

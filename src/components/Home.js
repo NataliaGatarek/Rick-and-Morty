@@ -34,21 +34,6 @@ function Home() {
     <div className="baner">
       <input type="text" placeholder="search" onChange={event => { setSearchBaner(event.target.value) }}/>
     </div>
-    <div className="container">
-    {!loading ? (
-    characters.filter((character) =>
-      character.name
-    .toLowerCase()
-    .includes(searchBaner.toLowerCase())
-    )
-    .map((character) =>
-        {
-      return <Charakters key={character.id} character={character} />
-        })
-      ) : (
-        <p>loading..</p>
-      )}
-    </div>
     {!loading ? (
       <ReactPaginate
           pageCount={pageCount}

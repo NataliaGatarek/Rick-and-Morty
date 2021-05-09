@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import { Modal } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function Charakters(props) {
 
     const [show, setShow] = useState(false);
@@ -20,7 +21,7 @@ function Charakters(props) {
             </div>
             <div className="flip-card-back display">
                     <strong>{props.character.name}</strong>
-                    <Button variant="outline-info" onClick={handleShow}>More</Button>{' '}
+                    <Button variant="outline-info" size="lg" onClick={handleShow}>More</Button>{' '}
                     </div>
                      <Modal Modal
                           show={show}
@@ -30,7 +31,7 @@ function Charakters(props) {
                     className="dip"
                 >
                           <Modal.Header className="disp">
-                          <Modal.Title><strong>{props.character.name}</strong></Modal.Title>
+                          <Modal.Title><h1><strong>{props.character.name}</strong></h1></Modal.Title>
                           </Modal.Header>
                     <Modal.Body className="displaying" >
                         <img src={props.character.image} />
@@ -39,7 +40,7 @@ function Charakters(props) {
                          <strong> {props.character.status} </strong>
                           </Modal.Body>
                           <Modal.Footer className="disp">
-                          <Button variant="outline-info" onClick={handleClose}>Close</Button>
+                          <Button variant="outline-info" size="lg" onClick={handleClose}>Close</Button>
                         </Modal.Footer>
                         </Modal>
             </div>

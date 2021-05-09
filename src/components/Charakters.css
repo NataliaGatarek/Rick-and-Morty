@@ -61,7 +61,8 @@ img {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 45px;
+  font-family: "East Sea Dokdo", cursive;
 }
 .displaying {
   display: flex;
@@ -69,12 +70,16 @@ img {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 40px;
 }
 .disp {
   background-color: black;
   color: white;
   border: 2px solid #08bae3;
   color: #08bae3;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 40px;
 }
 .logo {
   width: 600px;

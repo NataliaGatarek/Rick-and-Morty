@@ -35,9 +35,9 @@ function Charakters(props) {
                           </Modal.Header>
                     <Modal.Body className="displaying" >
                         <img src={props.character.image} />
-                          <strong> {props.character.species},</strong>
-                         <strong> {props.character.gender}, </strong>   
-                         <strong> {props.character.status} </strong>
+                         <p>species: <strong> {props.character.species},</strong></p> 
+                         <p>gender: <strong> {props.character.gender}, </strong></p>   
+                         <p> status: <strong> {props.character.status} </strong></p>
                           </Modal.Body>
                           <Modal.Footer className="disp">
                           <Button variant="outline-info" size="lg" onClick={handleClose}>Close</Button>
